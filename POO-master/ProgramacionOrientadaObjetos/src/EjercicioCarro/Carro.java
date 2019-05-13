@@ -24,13 +24,12 @@ public class Carro {
        this.ejes=eje;
        //relacion eje-motor / motor-eje
        for (int i = 0; i < eje.length; i++) {
+           this.motor.añadirEje(this.ejes[i]);
            if(i==0){
-               this.motor.añadirEje(this.ejes[i]);
                this.ejes[i].añadirMotor(this.motor);
            }
        }
-       
-       
+
    }
    public void AñadirLlantas(Llanta[] llantas){
        this.llantas=llantas;
