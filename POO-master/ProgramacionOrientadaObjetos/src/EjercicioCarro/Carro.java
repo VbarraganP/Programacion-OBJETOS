@@ -12,21 +12,23 @@ public class Carro {
     private String placa;
     private String marca;
     private Llanta[] llantas;
-    private Eje[] eje;
+    private Eje[] ejes;
     private Motor motor;
     
-    public Carro(String placa, String marca) {
+    public Carro(String placa, String marca,int potencia) {
         this.placa = placa;
         this.marca = marca;
+        this.motor=new Motor(potencia);
     }
-   public void addMotor(int potencia){
- //      motor=new Motor (1000,eje);
-   }
    public void AñadirEje(Eje[] eje){
-       this.eje=eje;
+       this.ejes=eje;
+       //relacion eje-motor / motor-eje
+       
    }
    public void AñadirLlantas(Llanta[] llantas){
        this.llantas=llantas;
    }
-   
+   public Llanta[] obtenerLlantas(){
+       return this.llantas;
+   }
 }

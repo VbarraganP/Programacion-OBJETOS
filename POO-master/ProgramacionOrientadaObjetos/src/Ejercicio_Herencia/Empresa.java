@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package HerenciaAutos;
+package Ejercicio_Herencia;
 
 import java.util.*;
 public class Empresa {

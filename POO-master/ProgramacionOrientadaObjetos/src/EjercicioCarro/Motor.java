@@ -13,8 +13,20 @@ public class Motor {
     private int potencia;
     private Eje eje;
 
-    public Motor(int potencia, Eje eje) {
+    public Motor(int potencia) {
         this.potencia = potencia;
-        this.eje = eje;
     }
+    
+    public void añadirEje(Eje eje){
+        this.eje=eje;
+    }
+
+    public int obtenerPotencia() {
+        return potencia;
+    }
+
+    public Eje obtenetEje() {
+        return eje;
+    }
+
 }

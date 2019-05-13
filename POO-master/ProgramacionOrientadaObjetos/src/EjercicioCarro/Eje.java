@@ -10,28 +10,31 @@ package EjercicioCarro;
  * @author vbarraganp
  */
 public class Eje {
-    private final Llanta[] eje;
     private Motor motor;
     private String marca;
+    private Llanta[] llantas;
     
     public Eje(String marca){
         this.marca=marca;
-        this.eje =new Llanta[2];
     }
-
-    public Motor getMotor() {
+    
+    public void añadirLlantas(Llanta[] llantas){
+       this.llantas=llantas; 
+    }
+    
+    public Motor obtenerMotor() {
         return motor;
     }
 
-    public void setMotor(Motor motor) {
+    public void añadirMotor(Motor motor) {
         this.motor = motor;
     }
 
-    public String getMarca() {
+    public String obtenerMarca() {
         return marca;
     }
 
-    public void setMarca(String marca) {
+    public void añadirMarca(String marca) {
         this.marca = marca;
     }
     

@@ -23,7 +23,7 @@ public class ConjuntosLibros {
         }
         return false;
     }
-    
+ /*   
     public boolean eliminarAutor(String autor){
         return false;
     }
@@ -42,4 +42,5 @@ public class ConjuntosLibros {
     public boolean comprobarLibros(){
         
     }
+    */
 }
