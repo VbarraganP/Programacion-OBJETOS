@@ -15,6 +15,7 @@ public class Motor {
 
     public Motor(int potencia) {
         this.potencia = potencia;
+        this.eje=eje;
     }
     
     public void añadirEje(Eje eje){

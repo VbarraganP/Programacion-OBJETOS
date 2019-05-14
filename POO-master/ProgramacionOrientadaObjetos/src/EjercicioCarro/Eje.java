@@ -16,6 +16,8 @@ public class Eje {
     
     public Eje(String marca){
         this.marca=marca;
+        this.motor=motor;
+        this.llantas=llantas;
     }
     
     public void añadirLlantas(Llanta[] llantas){

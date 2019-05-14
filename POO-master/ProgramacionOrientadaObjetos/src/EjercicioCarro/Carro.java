@@ -19,6 +19,9 @@ public class Carro {
         this.placa = placa;
         this.marca = marca;
         this.motor=new Motor(potencia);
+        this.ejes=ejes;
+        this.llantas=llantas;
+        
     }
    public void AñadirEje(Eje[] eje){
        this.ejes=eje;
@@ -37,4 +40,10 @@ public class Carro {
    public Llanta[] obtenerLlantas(){
        return this.llantas;
    }
+
+    @Override
+    public String toString() {
+        return "Carro{" + "placa=" + placa + ", marca=" + marca + ", llantas=" + llantas + ", ejes=" + ejes + ", motor=" + motor + '}';
+    }
+   
 }
