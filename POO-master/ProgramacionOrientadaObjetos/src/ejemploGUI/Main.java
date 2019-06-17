@@ -24,7 +24,7 @@ public class Main extends Application{// Application es una clase abstracta
 
     @Override
     public void start(Stage primaryStage) throws Exception {// metodo que se ejecuta para iniciar la aplicacion
-        int ancho=600, alto=600;
+        int ancho=1024, alto=512;
         //configirar escenario  
         Pane panel = new Pane();
         Canvas tablero = new Canvas (ancho,alto);//Canvas recibe las dimensiones como parametros del constructor
@@ -35,9 +35,6 @@ public class Main extends Application{// Application es una clase abstracta
         GraphicsContext lapiz= tablero.getGraphicsContext2D();
         
         //coordenadas 
-        int x=0,y=0;
-        
-        lapiz.fillText("Nicolas", 30, 80);
         
         Animacion animacion = new Animacion (lapiz);
         animacion.start();
