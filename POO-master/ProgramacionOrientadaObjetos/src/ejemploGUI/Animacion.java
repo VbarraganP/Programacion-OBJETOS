@@ -40,7 +40,7 @@ public class Animacion extends AnimationTimer {
         //fondo
         Lapiz.drawImage(fondo,0,0);
         //ovni
-        this.ovni=new Image("Imagenes/ufo_"+secuencia+".png");
+        this.ovni=new Image("Imagenes/ufo_"+this.secuencia+".png");
         Lapiz.drawImage(this.ovni, 0, 0);
         
         //barra de vida
